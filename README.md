@@ -1,1 +1,1 @@
-# Web_Design
+# Web_Design_Course
