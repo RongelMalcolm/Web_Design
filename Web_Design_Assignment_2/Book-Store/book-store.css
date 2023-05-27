@@ -1,0 +1,18 @@
+.table {
+    margin: 0 auto;
+    border-collapse: collapse;
+}
+.table td {
+    padding: 0.5rem;
+    border: 1px solid #c6c7cc;
+}
+.table th {
+    padding: 0.5rem;
+    border: 1px solid #c6c7cc;
+}
+.row1, .row2, .row3, .row4, .row5, .row6 {
+    text-transform: capitalize;
+}
+.subtotal, .tax, .total {
+    text-transform: capitalize;
+}
