@@ -3,7 +3,7 @@
     padding: 0;
 }
 body {
- background-color: #000;
+background-color: #000;
 }
 .header {
     color: #e3a144;
@@ -69,6 +69,68 @@ body {
     font-size: 16px;
 }
 .page-2:hover {
+    background-color: #e3a144;
+    color: #000;
+    border: 3px solid #000;
+}
+.dogbreeds {
+    font-family: Arial, Helvetica, sans-serif;
+}
+.page2headings {
+    color: #e3a144;
+    margin: 20px;
+}
+.breeds {
+    text-transform: capitalize;
+    font-size: 35px;
+}
+.page2headings p {
+    font-size: 1.3rem;
+}
+.dog img{
+    width: 200px;
+    border: solid 2px #e3a144;
+    float: right;
+    margin: 20px;
+    position: relative;
+    right: 80px;
+    z-index: -1;
+    display: flex;
+}
+.dog {
+    color: #e3a144;
+    margin: 20px
+}
+.dog p {
+    display: flex;
+    font-size: 15px;
+    margin: 20px;
+    padding-right: 50px;
+}
+.dog h2 {
+    font-size: 25px;
+    text-transform: capitalize;
+    margin-left: 20px;
+    margin-right: 20px;
+}
+.dog-sounds {
+    text-align: center;
+}
+.dog-sounds a{
+    text-decoration: none;
+    position: relative;
+    top: 50px;
+    bottom: 60px;
+    text-align: center;
+    color: #e3a144;
+    background: none;
+    border: 3px solid #e3a144;
+    border-radius: 15px;
+    margin-top: 40px;
+    padding: 15px 45px;
+    font-size: 16px;
+}
+.dog-sounds a:hover{
     background-color: #e3a144;
     color: #000;
     border: 3px solid #000;
