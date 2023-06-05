@@ -1,0 +1,106 @@
+html {
+    scroll-behavior: smooth;
+}
+.nav-bar {
+    color: teal;
+    border: 2px solid teal;
+    border-radius: 5px;
+    margin: 15px;
+    box-shadow: -15px -15px 15px rgba(255, 255, 255, 0.2), 
+    15px 15px 15px rgba(0, 0, 0, 0.1), 
+    inset 15px 15px 15px rgba(255, 255, 255, 0.2), 
+    inset 15px 15px 15px rgba(0, 0, 0, 0.1);
+}
+.list {
+    text-align: center;
+    font-size: 30px;
+}
+#list a{
+    text-decoration: none;
+}
+#list {
+    margin: 10px;
+}
+#list :hover {
+    cursor: pointer;
+    font-size: 35px;
+    background-color: teal;
+    color: white;
+    padding: 5px;
+    border-radius: 5px;
+}
+.hobbies, .main-heading {
+    margin: 15px;
+    color: teal;
+}
+#hobby img {
+    z-index: -1;
+    float: left;
+    margin-right: 10px;
+    margin-bottom: 2px;
+    width: 300px;
+    border-radius: 5px;
+    box-shadow: 3px 4px 5px darkgrey;
+}
+.hobbies p{
+    font-size: 31px;
+}
+.hobby-list {
+    list-style: none;
+}
+#hobby h1 {
+    font-size: 40px;
+}
+.main-heading h1 {
+    font-size: 60px;
+    text-align: center;
+    padding-top: 10px;
+}
+.main-heading h2 {
+    font-size: 45px;
+    padding-left: 40px;
+    padding-bottom: 20px;
+}
+.main-heading {
+    border: 1px solid none ;
+    box-shadow: 1px 1px 5px darkgrey;
+    background-color: white;
+}
+.hobbies {
+    border: 1px solid none;
+    box-shadow: 1px 1px 5px darkgrey;
+    background-color: white;
+    padding-bottom: 50px;
+    padding-top: 5px;
+}
+@media screen and (max-width: 1024px) {
+    #hobby h1 {
+        text-align: center;
+        font-size: 70px;
+    }
+    #hobby p {
+        font-size: 25px;
+    }
+}
+@media screen and (max-width: 640px) {
+    .main-heading h1 {
+        font-size: 40px;
+    }
+    .main-heading h2{
+        text-align: center;
+        font-size: 25px;
+    }
+    #hobby h1 {
+        font-size: 30px;
+        text-align: center;
+    }
+    #hobby img {
+        float: none;
+        display: block;
+        margin-left: auto;
+        margin-right: auto;
+    }
+    #hobby p {
+        font-size: 20px;
+    }
+}
