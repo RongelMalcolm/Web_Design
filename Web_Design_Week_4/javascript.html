@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <title>Javascript</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0"> 
+        <style>
+            h1, p, input {
+                font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+            }
+        </style>
+        <script>
+            function show(){
+                var age = prompt('What year were you born?');
+                document.getElementById("p").innerHTML= age;
+            }
+        </script>
+    </head>
+    <body onload= show()>
+        <div>
+            <h1>Javascript</h1>
+            <p id="test">This is a little paragraph lol</p>
+            <input type="button" onclick="alert('This is a test for javascript')" value="Click Me">
+    </body>
+</html>
