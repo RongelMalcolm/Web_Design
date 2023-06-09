@@ -214,7 +214,7 @@ padding: 60px 0;
 #home {
   padding: 0;
   color: #fff;
-  background-image: url(../img/cover/home.jpg);
+  background-image: url(../img/cover/Hellcat.jpeg);
   background-repeat: no-repeat;
   background-position: center center;
   background-size: cover;
@@ -244,7 +244,7 @@ overflow: hidden;}
 .service-icon i{
 	font-size:3em;
 	color:#28A09F;
-	}
+}
 #work{background:#000; color:#fff;} 
 #portfolio { width: 100% }
 #portfolio .filters { margin-bottom: 20px }
