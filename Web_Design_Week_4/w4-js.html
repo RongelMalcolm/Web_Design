@@ -7,8 +7,9 @@
     <link rel="stylesheet" href="w4-js.css">
     <title>Week 4</title>
     <style>
-        #image {
+        #pic_left {
             width: 35%;
+            height: 35%;
         }
     </style>
 </head>
@@ -26,12 +27,26 @@
             <option value="grey">Grey</option>
             <option value="purple">Purple</option>
         </select>
-        <h1>My name is Chicky...Chicky Chicky Chicky</h1>
-        <img src="NationalGeographic_2572187_square.jpg" alt="" id="image">
+        <button onclick="CC()">Change contents</button>
+        <input type="button" value="SWAP IMAGES" onclick="swap();">
+        <h1 id="content">Hi, My cat is called Ty and my dog is called Tus, put their names together and you'll get :D...:</h1>
+        <img id="pic_left" src="funny-cat.jpg" alt="" id="image">
+        <img id="pic_right" src="1_SWNS_SURPRISED_DOG_008.jpg" alt="">
     </div>
     <script>
         function color(value) {
             document.body.style.backgroundColor=value;
+        }
+        function CC() {
+            document.body.style.textAlign=center;
+        }
+        function swap() {
+            var leftID = document.getElementById('pic_left');
+                rightID = document.getElementById('pic_right');
+                leftSRC = leftID.src;
+                rightSRC = rightID.src;
+            leftID.src = rightSRC;
+            rightID.src = leftSRC;
         }
     </script>
 </body>
