@@ -61,7 +61,7 @@ section .girl {
 .login {
   position: relative;
   padding: 60px;
-  background: rgba(255, 255, 255, 0.25);
+  background: rgba(255, 255, 255, 0.35);
   backdrop-filter: blur(15px);
   border: 1px solid #fff;
   border-bottom: 1px rgba(255, 255, 255, 0.5);
@@ -79,7 +79,7 @@ section .girl {
   text-align: center;
   font-size: 2.5em;
   font-weight: 600;
-  color: #b40f02;
+  color: #cc2936;
   margin-bottom: 10px;
 }
 
@@ -93,21 +93,21 @@ section .girl {
   padding: 15px 20px;
   outline: none;
   font-size: 1.25em;
-  color: #b40f02;
+  color: #cc2936;
   border-radius: 5px;
   border: none;
   margin-bottom: 30px;
 }
 
 .login .inputBox input ::placeholder {
-  color: #b40f02;
+  color: #cc2936;
 }
 
 .login .inputBox #btn {
   position: relative;
   border: none;
   outline: none;
-  background: #b40f02;
+  background: #cc2936;
   color: #fff;
   cursor: pointer;
   font-size: 1.25em;
@@ -116,7 +116,7 @@ section .girl {
 }
 
 .login .inputBox #btn:hover {
-  background: #8b0c02;
+  background: #a61308;
 }
 
 .login .group {
@@ -126,7 +126,7 @@ section .girl {
 
 .login .group a {
   font-size: 1.25em;
-  color: #b40f02;
+  color: #cc2936;
   font-weight: 500;
   text-decoration: underline;
 }
@@ -145,60 +145,6 @@ section .girl {
   align-items: center;
   z-index: 1;
   pointer-events: none;
-}
-
-.leaves .set {
-  position: absolute;
-  width: 100%;
-  height: 100vh;
-  top: 0;
-  left: 0;
-  pointer-events: none;
-}
-
-.leaves .set div {
-  position: absolute;
-  display: block;
-}
-
-.leaves .set div:nth-child(1) {
-  left: 20%;
-  animation: animate 20s linear infinite;
-}
-
-.leaves .set div:nth-child(2) {
-  left: 50%;
-  animation: animate 14s linear infinite;
-}
-
-.leaves .set div:nth-child(3) {
-  left: 70%;
-  animation: animate 12s linear infinite;
-}
-
-.leaves .set div:nth-child(4) {
-  left: 5%;
-  animation: animate 15s linear infinite;
-}
-
-.leaves .set div:nth-child(5) {
-  left: 85%;
-  animation: animate 18s linear infinite;
-}
-
-.leaves .set div:nth-child(6) {
-  left: 90%;
-  animation: animate 12s linear infinite;
-}
-
-.leaves .set div:nth-child(7) {
-  left: 15%;
-  animation: animate 14s linear infinite;
-}
-
-.leaves .set div:nth-child(8) {
-  left: 60%;
-  animation: animate 15s linear infinite;
 }
 
 @keyframes animate {

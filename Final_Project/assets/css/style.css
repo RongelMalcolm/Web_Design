@@ -9,6 +9,7 @@ https://www.flickr.com/photos/dellphotos/8071882701/sizes/l/
 body {
 	font-family: 'Roboto', sans-serif;
   color: #444;
+  scroll-behavior: smooth;
 }
 h1,
 h2,
@@ -118,17 +119,17 @@ border: 1px solid #F4901C;
 	font-size: 28px;
 	}	
 .navbar-nav>li>a {
-line-height: 40px;
+line-height: 30px;
 }
 .navbar-nav>li.active {
-background: #2c2c2c;
+background-color: none;
 color: #fff;
 }
 .navbar-nav>li.active a{
 	color:#fff;
-	}
+}
 .navbar-default{ 	
-	background:#b40f02;
+	background:#cc2936;
 	}
 .navbar-default .navbar-brand {
   font-weight: 600;
@@ -232,9 +233,34 @@ padding: 60px 0;
 #services {
   background-color: #fff;
   border-bottom: solid 1px #e7e7e7;
-     background-image: url(../img/cover/sv-bg.jpg);
+  background-image: url(../img/cover/sv-bg.jpg);
+  color: #6667ab;
 }
-.service-icon{ 
+.button{
+  position: absolute;
+  top: 0%;
+  bottom: 10px;
+  left: 50%;
+  transform: translate(-50%, 20%);
+}
+.button{
+  font-size: 20px;
+  font-weight: 700;
+  color: #fff;
+  text-decoration: none;
+  font-family: sans-serif;
+  background-color: none;
+  height: 50px;
+  line-height: 0px;
+  text-align: center;
+  padding: 0 50px;
+  z-index: 1;
+  overflow: hidden;
+  border-radius: 10px;
+  text-transform: capitalize;
+  padding: 30px;
+}
+.service-icon{
 border-radius: 129px; 
 width: 180px;
 height: 180px;
@@ -245,7 +271,7 @@ overflow: hidden;}
 	font-size:3em;
 	color:#28A09F;
 }
-#work{background:#000; color:#fff;} 
+#work{background:#000; color:#ffdb11;} 
 #portfolio { width: 100% }
 #portfolio .filters { margin-bottom: 20px }
 #portfolio .filters li a {
@@ -255,8 +281,8 @@ overflow: hidden;}
 }
 #portfolio .filters li a,
 #portfolio .filters li a:hover,
-#portfolio .filters li a:focus { color: #E0E0E0 }
-#portfolio .filters li a.active { color: #fff }
+#portfolio .filters li a:focus { color: #6667ab}
+#portfolio .filters li a.active { color: #ffdb11 }
 #portfolio .items { margin-bottom: 0 }
 #portfolio .items li {
   position: relative;
@@ -304,9 +330,9 @@ line-height: 50px;
           transform: scale(1.1);
 }
 #clients {
-  color: #fff;
-  background-color:#b40f02;
-  background: url('../img/cover/car.jpg') left -80px no-repeat;
+  color: #ffdb11;
+  background: url('/Final_Project/assets/img/hellcat-sideview.jpg') left -80px no-repeat fixed;
+  background-size: contain;
 }
 #testimonials .item { margin-bottom: 30px }
 #testimonials .quote {
@@ -318,11 +344,11 @@ line-height: 50px;
   font-family: fontawesome;
   content: '\f10d';
 }
-#testimonials .client { color: #ccc }
+#testimonials .client { color: #ffdb11 }
 #testimonials .carousel-indicators li {
   width: 12px;
   height: 12px;
-  border-color: #a6a6a6;
+  border-color: #6667ab;
   -webkit-border-radius: 2px;
      -moz-border-radius: 2px;
           border-radius: 2px;
@@ -337,7 +363,7 @@ line-height: 50px;
   width: 12px;
   height: 12px;
   margin: 1px;
-  background-color: #fff;
+  background-color: #ffdb11;
   border-color: #fff;
 }
 #testimonials .carousel-indicators {
@@ -439,7 +465,7 @@ line-height: 50px;
 /*Price Table*/	
 .panel-danger>.panel-heading {
     color: #FFFFFF;
-    background-color: #ac180d;
+    background-color: #cc2936;
     border-color: #9E9E9E;
 }
 
