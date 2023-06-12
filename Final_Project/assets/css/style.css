@@ -29,7 +29,7 @@ a:focus {
 .showing { opacity: 1 }
 .img-rounded {
   -webkit-border-radius: 8px;
-     -moz-border-radius: 8px;
+    -moz-border-radius: 8px;
           border-radius: 8px;
 }
 .btn {
@@ -37,10 +37,10 @@ a:focus {
   font-weight: bold;
   text-transform: uppercase;
   -webkit-border-radius: 2px;
-     -moz-border-radius: 2px;
+    -moz-border-radius: 2px;
           border-radius: 2px;
   -webkit-transition: all .2s;
-     -moz-transition: all .2s;
+    -moz-transition: all .2s;
       -ms-transition: all .2s;
           transition: all .2s;
 }
@@ -95,7 +95,7 @@ border: 1px solid #F4901C;
 }
 #navbar-top { 
 	min-height: 70px
- }
+}
 .navbar {
 	min-height: 70px;
 }
@@ -104,7 +104,7 @@ border: 1px solid #F4901C;
   background-color: #fff;
   border: 0;
   -webkit-border-radius: 0;
-     -moz-border-radius: 0;
+    -moz-border-radius: 0;
           border-radius: 0;
 }
 .navbar-brand{
@@ -119,18 +119,29 @@ border: 1px solid #F4901C;
 	font-size: 28px;
 	}	
 .navbar-nav>li>a {
-line-height: 30px;
+line-height: 40px;
 }
 .navbar-nav>li.active {
-background-color: none;
 color: #fff;
+padding-bottom: 20px;
+transition: all 0.5s ease-in-out;
 }
-.navbar-nav>li.active a{
+.navbar-nav>li.active:hover {
+  background-color: #6667ab;
+  transform: scale(1.05);
+  padding-bottom:18.5px;
+  box-shadow: 0 0 30px 0 #9fa0ed;
+  cursor: pointer;
+}
+.navbar-nav>li.active a {
 	color:#fff;
+}
+.navbar-nav>li.active:active {
+  background-color: #6667ab;
 }
 .navbar-default{ 	
 	background:#cc2936;
-	}
+}
 .navbar-default .navbar-brand {
   font-weight: 600;
   text-transform: uppercase; 
@@ -157,11 +168,11 @@ color: #fff;
   width: 100%;
   border-bottom-color: transparent;
   -webkit-box-shadow: 0px 0px 3px 0px rgba(0,0,0,0.3);
-     -moz-box-shadow: 0px 0px 3px 0px rgba(0,0,0,0.3);
+    -moz-box-shadow: 0px 0px 3px 0px rgba(0,0,0,0.3);
           box-shadow: 0px 0px 3px 0px rgba(0,0,0,0.3);
 }
 .navbar>.container .navbar-brand:hover{
- color:#fff;
+color:#fff;
 }
 .banner-content{ 
 position: absolute;
@@ -266,9 +277,16 @@ width: 180px;
 height: 180px;
 margin: 0px auto;
 display: inline-block;
-overflow: hidden;}
+overflow: hidden;
+}
+.service-icon img{
+  transition: 1s ease-in-out;
+}
+.service-icon img:hover {
+  transform: scale(1.02);
+}
 .service-icon i{
-	font-size:3em;
+	font-size: 3em;
 	color:#28A09F;
 }
 #work{background:#000; color:#ffdb11;} 
@@ -293,8 +311,8 @@ overflow: hidden;}
 #portfolio .items li a img {
   width: 100%;
   -webkit-transition: all 0.3s ease-in-out;
-     -moz-transition: all 0.3s ease-in-out;
-       -o-transition: all 0.3s ease-in-out;
+    -moz-transition: all 0.3s ease-in-out;
+      -o-transition: all 0.3s ease-in-out;
           transition: all 0.3s ease-in-out;
 }
 #portfolio .items li a .overlay {
@@ -308,11 +326,11 @@ overflow: hidden;}
   -webkit-transition: all 0.3s ease-in-out;
     -moz-transition: all 0.3s ease-in-out;
       -o-transition: all 0.3s ease-in-out;
-         transition: all 0.3s ease-in-out;
+        transition: all 0.3s ease-in-out;
   opacity: 0;
 }
 #portfolio .items li a .overlay span {
- color: #FFF;
+color: #FFF;
 position: absolute;
 height: 50px;
 top: 50%;
@@ -324,9 +342,9 @@ line-height: 50px;
 #portfolio .items li a:hover .overlay { opacity: 1 }
 #portfolio .items li a:hover img {
   -webkit-transform: scale(1.1);
-     -moz-transform: scale(1.1);
+    -moz-transform: scale(1.1);
       -ms-transform: scale(1.1);
-       -o-transform: scale(1.1);
+      -o-transform: scale(1.1);
           transform: scale(1.1);
 }
 #clients {
@@ -350,11 +368,11 @@ line-height: 50px;
   height: 12px;
   border-color: #6667ab;
   -webkit-border-radius: 2px;
-     -moz-border-radius: 2px;
+    -moz-border-radius: 2px;
           border-radius: 2px;
   -webkit-transition: all 0.25s linear;
-     -moz-transition: all 0.25s linear;
-       -o-transition: all 0.25s linear;
+    -moz-transition: all 0.25s linear;
+      -o-transition: all 0.25s linear;
           transition: all 0.25s linear;
 }
 #testimonials .carousel-indicators li:hover,
@@ -391,17 +409,17 @@ line-height: 50px;
 }    
 #about .teammate .profile-photo img {
   -webkit-transition: all .4s ease;
-     -moz-transition: all .4s ease;
+    -moz-transition: all .4s ease;
       -ms-transition: all .4s ease;
-       -o-transition: all .4s ease;
+      -o-transition: all .4s ease;
           transition: all .4s ease;
 }
 #about .teammate:hover .profile-photo img,
 #about .teammate:focus .profile-photo img {
   -webkit-transform: scale(1.1);
-     -moz-transform: scale(1.1);
+    -moz-transform: scale(1.1);
       -ms-transform: scale(1.1);
-       -o-transform: scale(1.1);
+      -o-transform: scale(1.1);
           transform: scale(1.1);
 }
 #about .teammate .bio .border {
@@ -426,7 +444,7 @@ line-height: 50px;
   color: #00aced;
 }
 .space{
-     padding:35px 0 !important;
+    padding:35px 0 !important;
 }
 #contact {
   background: url(../img/cover/contact.jpg);
@@ -702,7 +720,7 @@ line-height: 50px;
   .page .content.cover { padding: 160px 0 }
   #testimonials .quote { padding: 0 50px }
   #testimonials .carousel-control.right { right: 10px }
-       .heroText {margin-top: 30%;    }
+    .heroText {margin-top: 30%;    }
     .heroText h2{font-size: 60px; line-height: 60px;}
     .heroText h2 strong{font-size: 45px;}
     .navbar-nav>li>a {
