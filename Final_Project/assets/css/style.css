@@ -244,8 +244,10 @@ padding: 60px 0;
 #services {
   background-color: #fff;
   border-bottom: solid 1px #e7e7e7;
-  background-image: url(../img/cover/sv-bg.jpg);
+  background-image: url(../img/hellcat-services.jpg);
   color: #6667ab;
+  background-repeat: no-repeat;
+  background-size: cover;
 }
 .button{
   position: absolute;
