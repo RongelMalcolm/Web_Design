@@ -482,13 +482,19 @@ line-height: 50px;
 #footer .social li .dribbble:focus { color: #ea4c89 }
 #footer .copyright { margin-bottom: 0 }
 /*priceTable*/
-/*Price Table*/	
-.panel-danger>.panel-heading {
+/*Price Table*/
+.panel-default:hover .panel-heading{
     color: #FFFFFF;
-    background-color: #cc2936;
+    background-color: #6667ab;
     border-color: #9E9E9E;
 }
-
+.btn-default:hover {
+  background-color: #6667ab;
+  color: #FFFFFF;
+}
+.list-group {
+  font-size: 1.6rem;
+}
 .price {
     font-size: 4em;
 }
@@ -515,7 +521,7 @@ line-height: 50px;
     -moz-box-shadow: 0 0 10px rgba(0,0,0,.5);
     -webkit-box-shadow: 0 0 10px rgba(0,0,0,.5);
     -webkit-transform: scale(1.05);
-    -moz-transform: scale(1.05);
+    transform: scale(1.05);
 }
 
 /**
