@@ -10,6 +10,7 @@ body {
 	font-family: 'Roboto', sans-serif;
   color: #444;
   scroll-behavior: smooth;
+  min-height: 100vh;
 }
 h1,
 h2,
@@ -130,7 +131,7 @@ line-height: 40px;
 .navbar-nav>li.active {
 color: #e9ecf2;
 padding-bottom: 20px;
-transition: all 0.5s ease-in-out;
+transition: all 0.3s ease-in-out;
 }
 .navbar-nav>li.active:hover {
   background-color: #d8dee8;
@@ -138,13 +139,13 @@ transition: all 0.5s ease-in-out;
   padding-bottom:18.5px;
   /*box-shadow: 0 0 30px 0 #9fa0ed;*/
   cursor: pointer;
-  color: #6667ab;
 }
 .navbar-nav>li.active a {
 	color:#e9ecf2;
 }
 .navbar-nav>li.active:active {
-  background-color: #6667ab;
+  color: #cc2936;
+  background-color: #e9ecf2;
 }
 .navbar-default{ 	
 	background:#cc2936;
@@ -259,6 +260,8 @@ padding: 60px 0;
   color: #cc2936;
   background-repeat: no-repeat;
   background-size: cover;
+  width: 100%;
+  height: 100%;
 }
 .button{
   position: absolute;
@@ -302,7 +305,7 @@ overflow: hidden;
 	font-size: 3em;
 	color:#28A09F;
 }
-#work{background:#000; color:#ffdb11;} 
+#work{background:	#141414; width:auto; color:#cc2936;} 
 #portfolio { width: 100% }
 #portfolio .filters { margin-bottom: 20px }
 #portfolio .filters li a {
@@ -312,8 +315,8 @@ overflow: hidden;
 }
 #portfolio .filters li a,
 #portfolio .filters li a:hover,
-#portfolio .filters li a:focus { color: #6667ab}
-#portfolio .filters li a.active { color: #ffdb11 }
+#portfolio .filters li a:focus { color: #e9ecf2}
+#portfolio .filters li a.active { color: #cc2936 }
 #portfolio .items { margin-bottom: 0 }
 #portfolio .items li {
   position: relative;
@@ -479,6 +482,10 @@ line-height: 50px;
   text-align: center;
   background-color: #181818;
 }
+#footer {
+  position: sticky;
+  top: 100%;
+}
 #footer a,
 #footer a:hover,
 #footer a:focus { color: #fff }
@@ -499,6 +506,9 @@ line-height: 50px;
     background-color: #cc2936;
     border-color: #9E9E9E;
 }
+.btn-default {
+  transition: all 0.5s ease-in-out;
+}
 .btn-default:hover {
   background-color: #cc2936;
   color: #e9ecf2;
@@ -508,6 +518,25 @@ line-height: 50px;
 }
 .list-group {
   font-size: 1.6rem;
+}
+.list-group-item, .panel-body {
+  transition: all 0.5s ease-in-out;
+}
+.list-group-item:nth-of-type(1):hover {
+  background-color: rgba(204, 41, 54, 0.3);
+  cursor: default;
+}
+.list-group-item:nth-of-type(2):hover {
+  background-color: rgba(204, 41, 54, 0.3);
+  cursor: default;
+}
+.list-group-item:nth-of-type(3):hover {
+  background-color: rgba(204, 41, 54, 0.3);
+  cursor: default;
+}
+.panel-body:hover {
+  background-color: rgba(204, 41, 54, 0.3);
+  cursor: default;
 }
 .price {
     font-size: 4em;
@@ -522,12 +551,15 @@ line-height: 50px;
     font-size: 35%;
     font-style: italic;
 }
-
 .panel {
+    transition-property: scale;
     -webkit-transition-property: scale;
+    transition-duration: 0.2s;
     -webkit-transition-duration: 0.2s;
     -webkit-transition-timing-function: ease-in-out;
+    transition-timing-function: ease-in-out;
     -moz-transition: all 0.2s ease-in-out;
+    transition: all 0.2s ease-in-out;
 }
 
 .panel:hover {
