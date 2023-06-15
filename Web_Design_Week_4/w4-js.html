@@ -8,8 +8,92 @@
     <title>Week 4</title>
     <style>
         #pic_left {
-            width: 35%;
-            height: 35%;
+            width: 20%;
+            height: 20%;
+        }
+        #pic_right {
+            width: 20%;
+            height: 20%;
+        }
+        .calculator {
+            width: 300px;
+            margin-right: 40px;
+            position: relative;
+            margin-left: auto;
+            transform:translateY(-300px);
+            z-index: 2;
+            padding-right: 10px;
+            padding-left: 10px;
+            padding-top: 20px;
+            padding-bottom: 20px;
+            border: 1px solid #ccc;
+            box-shadow: 0px 0px 10px #000;
+            text-align: center;
+            float: right;
+            justify-content: center;
+            background-color: rgb(136, 36, 36);
+            border-radius: 10px;
+        }
+        #result {
+            width: 80%;
+            height: 50px;
+            margin-bottom: 10px;
+            margin-left: auto;
+            margin-right: auto;
+            font-size: 24px;
+            padding: 5px;
+            text-align: right;
+            right: 2px;
+            position: relative;
+            background-color: #4b5c2b;
+        }
+        .btn-cal {
+            width: 55px;
+            height: 55px;
+            margin-right: 7px;
+            margin-bottom: 10px;
+            font-size: 20px;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+            background-color: rgb(239, 72, 72);
+            cursor: pointer;
+            position: relative;
+            top: 10px;
+            color: #e6e6e6;
+            transition: all 0.2s ease-in-out;
+            box-shadow: 0px 0px 3px #000;
+        }
+        .btn-cal:hover {
+            background-color: rgb(198, 57, 57);
+            color: white;
+            width: 52px;
+            height: 52px;
+        }
+        .gheading {
+            text-align: center;
+        }
+
+        .ggp {
+            margin-bottom: 10px;
+        }
+
+        #input, #guess {
+            font-size: 25px;
+            padding: 5px;
+            margin-right: 10px;
+        }
+
+        #guess {
+            background-color: #1384ed;
+            color: white;
+            border: none;
+            border-radius: 5px;
+            transition: all 0.3s ease-out;
+        }
+
+        #guess:hover {
+            background-color: #0e6ec7;
+            box-shadow: 0px 0px 3px #000;
         }
     </style>
 </head>
@@ -28,17 +112,50 @@
             <option value="purple">Purple</option>
         </select>
         <button onclick="CC()">Change contents</button>
-        <input type="button" value="SWAP IMAGES" onclick="swap();">
+        <input type="button" value="Swap Images" onclick="swap();">
         <h1 id="content">Hi, My cat is called Ty and my dog is called Tus, put their names together and you'll get :D...:</h1>
         <img id="pic_left" src="funny-cat.jpg" alt="" id="image">
         <img id="pic_right" src="1_SWNS_SURPRISED_DOG_008.jpg" alt="">
     </div>
+    <div class="ggame">
+        <h1 class="ggheading">Simple Guessing Game</h1>
+        <p class="ggp">Enter a number and guess the square of that number</p>
+        <input type="number" id="input">
+        <button onclick="guessinggame()" id="guess">Guess</button>
+        <p id="output"></p>
+    </div>
+    <div class="calculator">
+        <input type="text" id="result" readonly>
+        <button class="btn-cal" onclick="appendValue('7')">7</button>
+        <button class="btn-cal" onclick="appendValue('8')">8</button>
+        <button class="btn-cal" onclick="appendValue('9')">9</button>
+        <button class="btn-cal" onclick="appendValue('*')">x</button>
+        <button class="btn-cal" onclick="appendValue('4')">4</button>
+        <button class="btn-cal" onclick="appendValue('5')">5</button>
+        <button class="btn-cal" onclick="appendValue('6')">6</button>
+        <button class="btn-cal" onclick="appendValue('-')">-</button>
+        <button class="btn-cal" onclick="appendValue('1')">1</button>
+        <button class="btn-cal" onclick="appendValue('2')">2</button>
+        <button class="btn-cal" onclick="appendValue('3')">3</button>
+        <button class="btn-cal" onclick="appendValue('+')">+</button>
+        <button class="btn-cal" onclick="appendValue('0')">0</button>
+        <button class="btn-cal" onclick="appendValue('.')">.</button>
+        <button class="btn-cal" onclick="calculate()">=</button>
+        <button class="btn-cal" onclick="appendValue('/')">/</button>
+    </div>
     <script>
+        let result = document.getElementById('result');
+        function appendValue(value) {
+        result.value += value;
+        } 
+        function calculate() {
+            result.value = eval(result.value);
+        }
         function color(value) {
             document.body.style.backgroundColor=value;
         }
         function CC() {
-            document.body.style.textAlign=center;
+            document.getElementById('content').innerHTML= 'Tytus lol';
         }
         function swap() {
             var leftID = document.getElementById('pic_left');
@@ -48,6 +165,25 @@
             leftID.src = rightSRC;
             rightID.src = leftSRC;
         }
+        function guessinggame() {
+        var num = document.getElementById("input").value;
+        var answer = num * num;
+        var guesses = 0;
+        var guess;
+
+        while (guessCount < 5) {
+            guess = prompt("Guess what's the square of " + num + " (you have " + (5 - guesses) + " guesses left):");
+
+            if (guess == answer) {
+                document.getElementById("output").innerHTML = "Your answer is correct";
+                return;
+            } else {
+                guesses++;
+            }
+        }
+
+        document.getElementById("output").innerHTML = "Wrong answer, the correct answer is " + answer;
+    }
     </script>
 </body>
 </html>
