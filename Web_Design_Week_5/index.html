@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="/Web_Design_Week_5/style/formstyle.css">
+    
+    <title>Free Account</title>
+</head>
+<body>
+    <main>
+        <header>
+            <h1>Login or Create an Account!</h1>
+            <p>nice example of a login and create account form form.
+            </p>
+        </header>
+
+        <section>
+            <div class="left">
+                <form action="createAccount.php" method="post"> 
+                <h2>New Account:</h2>
+                <input type="text" name="username" placeholder="Username" required>
+                <input type="text" name="email" placeholder="E-Mail" required>
+                <input type="text" name="password" id="password" placeholder="Password" required>
+                <input type="text" name="passwordrep" id="confirm_password"  placeholder="Repeat Password">
+                <button>Create Account</button>
+            </form>
+            </div>
+
+            <div class="right">
+                <form action="logIn.php" method="post">
+                <h2>Login:</h2>
+                <input type="text" name="Username" placeholder="Username" required>
+                <input type="text"   name="Password"placeholder="Password" required>
+                
+                <button>Login</button>
+            </form>
+            </div>
+        </section>
+    </main>
+    <script src="/Web_Design_Week_5/javascript/cp.js">
+
+    </script>
+</body>
+</html>

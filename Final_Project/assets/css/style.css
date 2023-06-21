@@ -97,8 +97,8 @@ border: 1px solid #F4901C;
 #navbar-top { 
 	min-height: 70px
 }
-.navbar-brand .nav-extenal:hover {
-  color: #e9ecf2;
+.navbar-brand .nav-external:hover {
+  color: #cc2936;
 }
 .navbar {
 	min-height: 70px;
@@ -136,9 +136,9 @@ transition: all 0.3s ease-in-out;
 .navbar-nav>li.active:hover {
   background-color: #d8dee8;
   transform: scale(1.05);
-  padding-bottom:18.5px;
   /*box-shadow: 0 0 30px 0 #9fa0ed;*/
   cursor: pointer;
+  color: #cc2936;
 }
 .navbar-nav>li.active a {
 	color:#e9ecf2;
@@ -150,6 +150,7 @@ transition: all 0.3s ease-in-out;
 .navbar-default{ 	
 	background:#cc2936;
 }
+
 .navbar-default .navbar-brand {
   font-weight: 600;
   text-transform: uppercase; 
@@ -160,12 +161,14 @@ transition: all 0.3s ease-in-out;
   color:#e9ecf2;
 }
 .navbar-default .navbar-nav > .active > a,
-.navbar-default .navbar-nav > .active > a:hover,
 .navbar-default .navbar-nav > .active > a:focus {
   color: #e9ecf2;
   background-color: transparent;
 }
-.navbar-default .navbar-nav>li>a:hover, .navbar-default .navbar-nav>li>a:focus{color: #B9B9B9;}
+.navbar-default .navbar-nav > .active > a:hover{
+  color: #cc2936;
+}
+.navbar-default .navbar-nav>li>a:hover, .navbar-default .navbar-nav>li>a:focus{color: #cc2936;}
 .navbar-default .navbar-toggle { border-color: transparent }
 .navbar-default .navbar-toggle:hover,
 .navbar-default .navbar-toggle:focus { background-color: transparent }
@@ -658,8 +661,12 @@ line-height: 50px;
 	outline:none;
 	-webkit-border-radius: 1px;
 	-moz-border-radius: 1px;
-	border-radius: 1px;
+	border-radius: 5px;
 	background: rgba(255, 255, 255, 0.35);
+}
+.form.contact .input-group input.lg,
+.form.contact .input-group textarea.lg::placeholder {
+  color: #d8dee8;
 }
 
 .form.contact .input-group textarea.lg {
@@ -668,12 +675,18 @@ line-height: 50px;
 	padding-top:15px;
 	resize:none;
 }
-
+.form.contact .input-group input,
+.form.contact .input-group textarea {
+  transition: all 0.3s ease-in-out;
+}
 .form.contact .input-group input:focus,
 .form.contact .input-group textarea:focus {
-	border-color:#6ebff3;
+  transform: scale(1.05);
 }
-
+.form.contact .input-group input:hover, 
+.form.contact .input-group textarea:hover {
+  transform: scale(1.05);
+}
 .form.contact .input-group input.err,
 .form.contact .input-group textarea.err {
 	border-color:#f5b075 !important;
@@ -689,10 +702,11 @@ line-height: 50px;
 	font-size:18px;
 	outline:none;
 	font-weight:300;
+  border-radius: 5px;
 }
 
 .form.contact .input-group button.submit:hover {
-	background:#FF7F00;
+	background:#b52531;
 }
 
 .form.contact #message_sent {
@@ -717,7 +731,9 @@ line-height: 50px;
 	color:#fff;
 	display:none;
 }
-
+.input-group i.fa:hover {
+  transform: scale(1.05);
+}
 .form.contact #message_sent p {
 	font-size:45px;
 	font-weight:100;
