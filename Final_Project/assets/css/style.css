@@ -1,8 +1,3 @@
-/*-----------------------------------------
-Responsive One Page Template
-Template By: WebThemez.com
-https://www.flickr.com/photos/dellphotos/8071882701/sizes/l/
--------------------------------------------*/
 @import url(http://fonts.googleapis.com/css?family=Oswald:400,700);
 @import url(http://fonts.googleapis.com/css?family=Roboto:400,500,700);
 @import url(http://fonts.googleapis.com/css?family=Lobster+Two:700italic);
@@ -143,10 +138,10 @@ transition: all 0.3s ease-in-out;
 .navbar-nav>li.active a {
 	color:#e9ecf2;
 }
-.navbar-nav>li.active:active {
+/*.navbar-nav>li.active:active {
   color: #cc2936;
   background-color: #e9ecf2;
-}
+}*/
 .navbar-default{ 	
 	background:#cc2936;
 }
@@ -158,7 +153,6 @@ transition: all 0.3s ease-in-out;
 .navbar-default .navbar-nav > li > a {
   font-weight: 600;
   text-transform: uppercase;
-  color:#e9ecf2;
 }
 .navbar-default .navbar-nav > .active > a,
 .navbar-default .navbar-nav > .active > a:focus {
@@ -168,7 +162,7 @@ transition: all 0.3s ease-in-out;
 .navbar-default .navbar-nav > .active > a:hover{
   color: #cc2936;
 }
-.navbar-default .navbar-nav>li>a:hover, .navbar-default .navbar-nav>li>a:focus{color: #cc2936;}
+.navbar-default .navbar-nav>li>a:focus{color: #cc2936;}
 .navbar-default .navbar-toggle { border-color: transparent }
 .navbar-default .navbar-toggle:hover,
 .navbar-default .navbar-toggle:focus { background-color: transparent }
@@ -263,6 +257,7 @@ padding: 60px 0;
   color: #cc2936;
   background-repeat: no-repeat;
   background-size: cover;
+  background-attachment: fixed;
   width: 100%;
   height: 100%;
 }
@@ -283,12 +278,10 @@ padding: 60px 0;
   height: 50px;
   line-height: 0px;
   text-align: center;
-  padding: 0 50px;
   z-index: 1;
   overflow: hidden;
   border-radius: 10px;
   text-transform: capitalize;
-  padding: 30px;
 }
 .service-icon{
 border-radius: 129px; 
@@ -370,6 +363,7 @@ line-height: 50px;
   color: #ffdb11;
   background: url('/Final_Project/assets/img/hellcat-sideview.jpg') left -80px no-repeat fixed;
   background-size: contain;
+  background-attachment: fixed;
 }
 #testimonials .item { margin-bottom: 30px }
 #testimonials .quote {
@@ -466,13 +460,13 @@ line-height: 50px;
     padding:35px 0 !important;
 }
 #contact {
-  background: url(../img/cover/contact.jpg);
+  background: rgba(0, 0, 0, 0.8)url(../img/cover/contact-cover.jpg) ;
   background-repeat: no-repeat;
   background-position: center center;
-  background-size: cover;   
-    padding:65px 0 !important;
+  background-size: 170% cover;
+  padding:155px 0 !important;
+  background-blend-mode: darken;
 }
-
 #contact,
 #contact a,
 #contact a:hover,
@@ -574,7 +568,7 @@ line-height: 50px;
 }
 
 /**
-**** Form styles ****
+*** Form styles ****
 **/
 .form.contact {
 	padding:45px 0 15px 0;
@@ -636,15 +630,13 @@ line-height: 50px;
 	position:relative;
 	display: inline-block;
 }
-
 .form.contact .input-group i {
-	color:#d8dee8;
+	color:#cc2936;
 	font-size:20px;
 	position:absolute;
 	line-height:66px;
 	left:17px;
 }
-
 .form.contact .input-group input.lg,
 .form.contact .input-group textarea.lg {
 	padding:0 10px;
@@ -664,11 +656,18 @@ line-height: 50px;
 	border-radius: 5px;
 	background: rgba(255, 255, 255, 0.35);
 }
-.form.contact .input-group input.lg,
+.form.contact .input-group input.lg:hover {
+  background: rgba(170, 168, 168, 0.95);
+}
+.form.contact .input-group textarea.lg:hover i {
+  color: #cc2936;
+}
 .form.contact .input-group textarea.lg::placeholder {
   color: #d8dee8;
 }
-
+.input-group input.lg::placeholder {
+  color: #d8dee8;
+}
 .form.contact .input-group textarea.lg {
 	height:162px;
 	text-indent:10px;
@@ -703,10 +702,12 @@ line-height: 50px;
 	outline:none;
 	font-weight:300;
   border-radius: 5px;
+  transition: all 0.3s ease-in-out;
 }
 
 .form.contact .input-group button.submit:hover {
 	background:#b52531;
+  transform: scale(1.05);
 }
 
 .form.contact #message_sent {
@@ -732,7 +733,7 @@ line-height: 50px;
 	display:none;
 }
 .input-group i.fa:hover {
-  transform: scale(1.05);
+  transform: scale(1.5);
 }
 .form.contact #message_sent p {
 	font-size:45px;
