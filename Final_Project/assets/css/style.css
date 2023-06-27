@@ -309,6 +309,10 @@ overflow: hidden;
   font-weight: 600;
   text-transform: uppercase;
 }
+.fancybox img {
+  width: 210px;
+  height: 210px;
+}
 #portfolio .filters li a,
 #portfolio .filters li a:hover,
 #portfolio .filters li a:focus { color: #e9ecf2}
@@ -416,11 +420,29 @@ line-height: 50px;
   background-size: cover;
   background-attachment: fixed;
 }
-#about .heading {
-  color: #cc2936
+.bio-descrip {
+  position: relative;
+  left: 200px;
+  display: flex;
+  margin-right: 100px;
+  padding: 7px;
+  width: 550px;
+  font-size: 20px;
+  color: #cc2936;
 }
-.bio {
-  transform: translateX(0px);
+.teammate {
+  position: relative;
+  margin: 10px;
+  transform: translateX(300px);
+  bottom: 30px;
+  display: flexbox;
+  float: left;
+}
+#about .heading {
+  text-align: center;
+}
+#about .heading {
+  color: #cc2936;
 }
 #about .content { padding-bottom: 0 }
 #about .teammate .bio { 
@@ -434,7 +456,7 @@ line-height: 50px;
     overflow: hidden; 
     display: inline-block;
     width: 140px;
-    height: 140px; 
+    height: 140px;
 }    
 #about .teammate .profile-photo img {
   -webkit-transition: all .4s ease;
@@ -514,6 +536,13 @@ line-height: 50px;
 #footer .copyright { margin-bottom: 0 }
 /*priceTable*/
 /*Price Table*/
+#priceTable {
+  background-image: url(../img/cover/prices.jpg);
+  background-repeat: no-repeat;
+  background-position: center center;
+  background-size: cover;
+  background-attachment: fixed;
+}
 .panel-default:hover .panel-heading{
     color: #e9ecf2;
     background-color: #cc2936;
@@ -551,6 +580,10 @@ line-height: 50px;
   background-color: rgba(204, 41, 54, 0.3);
   cursor: default;
 }
+
+#priceTable .heading {
+  color: #cc2936;
+}
 .price {
     font-size: 4em;
 }
@@ -564,7 +597,11 @@ line-height: 50px;
     font-size: 35%;
     font-style: italic;
 }
+.panel-heading {
+  color: #141414;
+}
 .panel {
+  color: #141414;
     transition-property: scale;
     -webkit-transition-property: scale;
     transition-duration: 0.2s;
@@ -661,7 +698,7 @@ line-height: 50px;
 	height:66px;
 	width:100%;
 	line-height:20px;
-	font-size:20px;
+	font-size:18px;
 	font-weight:100;
 	font-family:"Roboto", Arial, sans-serif;
 	color:#cc2936;
@@ -701,6 +738,7 @@ line-height: 50px;
 .form.contact .input-group input:hover, 
 .form.contact .input-group textarea:hover {
   transform: scale(1.05);
+  margin-left: 5px;
 }
 .form.contact .input-group input.err,
 .form.contact .input-group textarea.err {
@@ -747,9 +785,6 @@ line-height: 50px;
 	vertical-align:middle;
 	color:#fff;
 	display:none;
-}
-.input-group i.fa:hover {
-  transform: scale(1.5);
 }
 .form.contact #message_sent p {
 	font-size:45px;
