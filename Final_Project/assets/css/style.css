@@ -409,8 +409,24 @@ line-height: 50px;
   background-image: none;
   text-shadow: none;
 }
+#about {
+  background-image: url(../img/cover/about.jpg);
+  background-repeat: no-repeat;
+  background-position: center center;
+  background-size: cover;
+  background-attachment: fixed;
+}
+#about .heading {
+  color: #cc2936
+}
+.bio {
+  transform: translateX(0px);
+}
 #about .content { padding-bottom: 0 }
-#about .teammate .bio { padding-top: 10px }
+#about .teammate .bio { 
+  padding-top: 10px;
+  color: #cc2936;
+}
 #about .teammate .profile-photo {
   overflow: hidden; 
 } 
