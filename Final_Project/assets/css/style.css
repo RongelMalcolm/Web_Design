@@ -100,7 +100,6 @@ border: 1px solid #F4901C;
 }
 .navbar-default {
   margin-bottom: 0;
-  background-color: #e9ecf2;
   border: 0;
   -webkit-border-radius: 0;
     -moz-border-radius: 0;
@@ -120,28 +119,18 @@ border: 1px solid #F4901C;
 .navbar-nav>li>a {
 line-height: 40px;
 }
-.active a:hover {
-  color: #cc2936 !important;
-}
-.navbar-nav>li.active {
+.navbar-nav>li.active>a{
 color: #e9ecf2;
 padding-bottom: 20px;
 transition: all 0.3s ease-in-out;
-}
-.navbar-nav>li.active:hover {
-  background-color: #d8dee8;
-  transform: scale(1.05);
-  /*box-shadow: 0 0 30px 0 #9fa0ed;*/
-  cursor: pointer;
-  color: #cc2936;
+font-size: 20px;
 }
 .navbar-nav>li.active a {
 	color:#e9ecf2;
 }
-/*.navbar-nav>li.active:active {
+.navbar-nav>li.active:active {
   color: #cc2936;
-  background-color: #e9ecf2;
-}*/
+}
 .navbar-default{ 	
 	background:#cc2936;
 }
@@ -261,7 +250,7 @@ padding: 60px 0;
   width: 100%;
   height: 100%;
 }
-.button{
+/*.button{
   position: absolute;
   top: 0%;
   bottom: 10px;
@@ -282,7 +271,7 @@ padding: 60px 0;
   overflow: hidden;
   border-radius: 10px;
   text-transform: capitalize;
-}
+}*/
 .service-icon{
 border-radius: 129px; 
 width: 180px;
@@ -529,8 +518,8 @@ line-height: 50px;
 #footer .social li .facebook:focus { color: #3b5998 }
 #footer .social li .twitter:hover,
 #footer .social li .twitter:focus { color: #00aced }
-#footer .social li .google-plus:hover,
-#footer .social li .google-plus:focus { color: #d34836 }
+#footer .social li .instagramm:hover,
+#footer .social li .instagramm:focus { color: #d34836 }
 #footer .social li .dribbble:hover,
 #footer .social li .dribbble:focus { color: #ea4c89 }
 #footer .copyright { margin-bottom: 0 }
