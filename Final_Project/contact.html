@@ -56,6 +56,7 @@
             </div>
         </nav>
         </div>
+        <!--Contact section-->
         <section id="contact" class="content-section form contact light space">
             <div class="container">
                 <div class="content cover text-center">
@@ -65,9 +66,9 @@
                     <p>Any questions you may like to ask the creator, please submit them below.<br/><br/></p>
                 </div>
                 <div class="row">
-                <span id="message"></span><!-- remove #message to stop floating jQuery messages -->
+                <span id="message"></span>
                 
-                <form target="#" name="contact">
+                <form target="#" name="contact" onsubmit="sendEmail(); reset(); return false;"> 
                     <div class="col-lg-5 anim fadeInLeft animated" style="visibility: visible;">
                     
                         <span class="input-group">
@@ -104,6 +105,7 @@
             
             <span id="message_sent"><i class="fa-check fa"></i></span><!-- jQuery display of giant checkmark -->	
         </section>
+        <!--Footer section-->
         <footer id="footer">
             <div class="container"> 
             <div class="row">
@@ -161,10 +163,11 @@
         });
         </script>
         </footer>
+        <!--Scripts-->
         <script src="assets/js/modernizr-latest.js"></script>
         <script src="assets/js/jquery.min.js"></script>
         <script src="assets/js/bootstrap.min.js"></script>
-    <script src="assets/js/jquery.cslider.js"></script>
+        <script src="assets/js/jquery.cslider.js"></script>
         <script src="assets/js/isotope.pkgd.min.js"></script>
         <script src="assets/js/jquery.fancybox.pack.js"></script>  
         <script src="assets/js/jquery.fancybox-media.js"></script>  
@@ -181,6 +184,22 @@
                 bgincrement: 0
             });
         });
+        </script>
+        <script src="https://smtpjs.com/v3/smtp.js"></script>
+        <script>
+            function sendEmail() {
+                Email.send({
+                Host : "smtp.elasticemail.com",
+                Username : "malcolm6299@gmail.com",
+                Password : "35BA249F57A721490D7B55383F90CA0A5E9C",
+                To : 'rongelm2022@tamcc.edu.gd',
+                From : document.getElementById("contactAddress").value,
+                Subject : "New Contact Form Enquiry",
+                Body : "And this is the body"
+                }).then(
+                message => alert(message)
+                );
+            }
         </script>
         </body>
     </html>

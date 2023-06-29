@@ -1,24 +1,27 @@
 @import url(http://fonts.googleapis.com/css?family=Oswald:400,700);
 @import url(http://fonts.googleapis.com/css?family=Roboto:400,500,700);
 @import url(http://fonts.googleapis.com/css?family=Lobster+Two:700italic);
+/*Styling the body of all pages*/
 body {
 	font-family: 'Roboto', sans-serif;
   color: #444;
   scroll-behavior: smooth;
   min-height: 100vh;
 }
+/*Style for all headings*/
 h1,
 h2,
 h3,
 h4,
 h5,
 h6 { font-weight: 300; font-family: 'Oswald', sans-serif; }
+/*All focus*/
 *,
 *:focus { outline: none !important }
 a { color: #2d2d2d }
+/*Hovering and focusing on any a element*/
 a:hover,
 a:focus {
-  color: #0c86b6;
   text-decoration: none;
 }
 .hiding { opacity: 0 }
@@ -28,6 +31,7 @@ a:focus {
     -moz-border-radius: 8px;
           border-radius: 8px;
 }
+/**/
 .btn {
   font-size: 12px;
   font-weight: bold;
@@ -40,37 +44,7 @@ a:focus {
       -ms-transition: all .2s;
           transition: all .2s;
 }
-.btn-primary{
-	background-color: #FF7F00;
-border: 1px solid #F4901C;
-	}
-.btn-blue {
-  color: #fff;
-  background-color: #26A2DD;
-}
-.btn-blue:hover,
-.btn-blue:focus {
-  color: #fff;
-  background-color: #2a3940;
-}
-.btn-green {
-  color: #fff;
-  background-color: #71be3c;
-}
-.btn-green:hover,
-.btn-green:focus {
-  color: #fff;
-  background-color: #2a3940;
-}
-.btn-dark {
-  color: #fff;
-  background-color: #2a3940;
-}
-.btn-dark:hover,
-.btn-dark:focus {
-  color: #fff;
-  background-color: #2a3940;
-}
+
 .loader {
   position: fixed;
   z-index: 100000;
@@ -89,6 +63,7 @@ border: 1px solid #F4901C;
   background-repeat: no-repeat;
   background-position: center center;
 }
+/*Nav bar height and styling*/
 #navbar-top { 
 	min-height: 70px
 }
@@ -179,7 +154,8 @@ bottom: 0px;
 text-align: center;
 left: 0px;
 right: 0px;
-	}
+}
+/*Styling for text in home page*/
 .heroText {
 margin-top: 19%;
     opacity: .7;
@@ -199,11 +175,7 @@ font-weight: bold;
 .heroText h2 strong{
     font-size: 50px;
 }
-.carousel-indicators li{
-width: 10px;
-height: 10px; 
-border: 1px solid #e9ecf2;  
-} 	
+/*Styling of the pages for each webpage*/
 .page { overflow: hidden } 
 .page .container {
 padding: 60px 0;
@@ -221,6 +193,7 @@ padding: 60px 0;
 }
 .page .heading {margin-bottom:60px}
 .page .heading p{padding:15px 0;}
+/*Styling of home page*/
 #home {
   padding: 0;
   color: #e9ecf2;
@@ -272,6 +245,7 @@ padding: 60px 0;
   border-radius: 10px;
   text-transform: capitalize;
 }*/
+/*Style for Services page*/
 .service-icon{
 border-radius: 129px; 
 width: 180px;
@@ -280,16 +254,14 @@ margin: 0px auto;
 display: inline-block;
 overflow: hidden;
 }
+
 .service-icon img{
   transition: 1s ease-in-out;
 }
 .service-icon img:hover {
   transform: scale(1.02);
 }
-.service-icon i{
-	font-size: 3em;
-	color:#28A09F;
-}
+/*Styling for Works Section*/
 #work{background:	#141414; width:auto; color:#cc2936;} 
 #portfolio { width: 100% }
 #portfolio .filters { margin-bottom: 20px }
@@ -352,56 +324,7 @@ line-height: 50px;
       -o-transform: scale(1.1);
           transform: scale(1.1);
 }
-#clients {
-  color: #ffdb11;
-  background: url('/Final_Project/assets/img/hellcat-sideview.jpg') left -80px no-repeat fixed;
-  background-size: contain;
-  background-attachment: fixed;
-}
-#testimonials .item { margin-bottom: 30px }
-#testimonials .quote {
-  padding: 0 90px;
-  font-size: 16px;
-}
-#testimonials .quote:before {
-  margin-right: 10px;
-  font-family: fontawesome;
-  content: '\f10d';
-}
-#testimonials .client { color: #ffdb11 }
-#testimonials .carousel-indicators li {
-  width: 12px;
-  height: 12px;
-  border-color: #6667ab;
-  -webkit-border-radius: 2px;
-    -moz-border-radius: 2px;
-          border-radius: 2px;
-  -webkit-transition: all 0.25s linear;
-    -moz-transition: all 0.25s linear;
-      -o-transition: all 0.25s linear;
-          transition: all 0.25s linear;
-}
-#testimonials .carousel-indicators li:hover,
-#testimonials .carousel-indicators li:focus { border-color: #fff }
-#testimonials .carousel-indicators .active {
-  width: 12px;
-  height: 12px;
-  margin: 1px;
-  background-color: #ffdb11;
-  border-color: #fff;
-}
-#testimonials .carousel-indicators {
-  bottom: 0;
-  margin-bottom: 0;
-}
-#testimonials .carousel-control {
-  top: 15%;
-  width: 0%;
-  display: none;
-  font-size: 40px;
-  background-image: none;
-  text-shadow: none;
-}
+/*Styling for About page*/
 #about {
   background-image: url(../img/cover/about.jpg);
   background-repeat: no-repeat;
@@ -486,6 +409,7 @@ line-height: 50px;
 .space{
     padding:35px 0 !important;
 }
+/*Style for Contact Page*/
 #contact {
   background: rgba(0, 0, 0, 0.8)url(../img/cover/contact-cover.jpg) ;
   background-repeat: no-repeat;
@@ -506,6 +430,7 @@ line-height: 50px;
   text-align: center;
   background-color: #181818;
 }
+/*Style for Footer in all pages*/
 #footer {
   position: sticky;
   top: 100%;
@@ -523,8 +448,7 @@ line-height: 50px;
 #footer .social li .dribbble:hover,
 #footer .social li .dribbble:focus { color: #ea4c89 }
 #footer .copyright { margin-bottom: 0 }
-/*priceTable*/
-/*Price Table*/
+/*Style for Price page*/
 #priceTable {
   background-image: url(../img/cover/prices.jpg);
   background-repeat: no-repeat;
@@ -600,7 +524,6 @@ line-height: 50px;
     -moz-transition: all 0.2s ease-in-out;
     transition: all 0.2s ease-in-out;
 }
-
 .panel:hover {
     box-shadow: 0 0 10px rgba(0,0,0,.5);
     -moz-box-shadow: 0 0 10px rgba(0,0,0,.5);
@@ -609,9 +532,7 @@ line-height: 50px;
     transform: scale(1.05);
 }
 
-/**
-*** Form styles ****
-**/
+/*Style for Message form*/
 .form.contact {
 	padding:45px 0 15px 0;
 	margin:0;
@@ -819,7 +740,7 @@ line-height: 50px;
 .form.contact .input-group.tight input.lg {
 	width:100%;
 }
-/* Responsive style */
+/* Responsive stylebbbbbbbbbbbbbbbbbb */
 @media screen and (max-width: 1024px) { 
   #testimonials .carousel-control { display: block }
 }
